@@ -1,0 +1,60 @@
+Class A IP Address  -  0.0.0.0 to 127.255.255.255
+127 is reserved as loopback.
+0 reserved for default network.
+Actual Range - 1.0.0.0 to 126.255.255.255
+IP address 0.0.0.0 is used by the network devices before assigning them an IP address.
+In Class A address, The first 8 bits network and the remaining bits are host part.
+First bit is 0.
+Unicast traffic.
+
+Class B IP Address - 128.0.0.0 - 191.255.255.255
+Starts with binary 10
+10000000 - 10111111(128 - 191)
+First 16 bits - Network part
+Next 16 bits - Host part
+For example, 172.16.12.13, 172.16 - Network part, 12.13 - Host part.
+Second bit is 0.
+Unicast traffic.
+
+Class C IP address - 192.0.0.0 to 223.255.255.255
+Starts with binary 110
+11000000 - 11011111(192 - 223)
+First 24 bits - Network part
+Next 8 bits - Host part
+For example, 192.168.1.1, 192.168.1 - Network part, 1 - Host part
+Third bit is 0.
+Unicast traffic.
+
+Class D IP Address - 224.0.0.0 to 239.255.255.255
+Starts with binary 1110
+11100000 - 11101111(224 - 239)
+
+Class E IP Address - reserved
+Starts with 1111.
+240.0.0.0 to 255.255.255.255
+255.255.255.255 reserved for broadcast.
+
+
+
+Directed Broadcast Address - Host sends data to all devices on a specific network.
+Host portion is populated with binary ones => 255
+Disabled by default in modern routers due to security reasons.
+Nowadays, Directed Broadcast addresses are dropped by routers and switches by default.
+Eg: 172.16.255.255
+
+Local Broadcast Address - communicate with all devices on the local network.
+Address is all binary 1's => 11111111.11111111.11111111.11111111 => 255.255.255.255
+
+Eg: Host requesting an IP from the DHCP server; To get the IP address, it has to contact the DHCP server.
+The host need to find the DHCP server. For that, It has to broadcast the request for an IP address to all devices in the network.
+By this, it finds the DHCP server and gets the IP assigned(Local Broadcast Address).
+The Local Broadcast Addresses such as 255.255.255.255 are used for broadcasting messages in the same network layer.
+They are meant for communication between the devices in a single network, they are not meant to be routed.
+If they are routed, the broadcast messages create an unwanted congestion on the nearby networks.
+And also, the local broadcast messages are done by Layer 2 protocol for internal communication.
+Thus, they are dropped by Layer 3 devices.
+To make the messages routable, DHCP forwarding or DHCP relay need to be enabled.
+DHCP forwarding or DHCP relay is the process which allows to get the devices in the particular subnet to get
+the IP address if the DHCP server is not available in the particular subnet. The DHCP relay agent makes the local broadcast message
+intercepts the broadcast and encapsulates it into a unicast packet and forwards it to the DHCP server in the remote subnet.
+That particular DHCP server processes the request and sends the IP address as response which is then delivered it to the client in local subnet.
