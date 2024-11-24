@@ -1,0 +1,13 @@
+Learnings from the Credly course...
+
+Peer to peer networks - A computer can act as a client as well as the server.
+                        It is called as Peer to peer network.
+                        The computer act as both client and server when needed.
+
+For example, The two computers and a printer can be set as peer to peer network, where,
+Computer A acts as a server and Computer B acts as a client for sharing the file.
+For printing, Computer B act as server and printer acts as client.
+
+Advantages: Easy set up, Less complex, Lower cost, Used for simple tasks.
+Disadvantages: No centralized administration, Less secure, Limited scalability, Slow performance.
+
