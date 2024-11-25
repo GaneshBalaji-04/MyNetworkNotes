@@ -1,0 +1,39 @@
+Learnings from Credly netacad.
+
+
+Network infrastructure - How the network is designed.
+Three categories:
+    1. End devices
+    2. Intermediate devices.
+    3. Network Media
+
+Wired Cable - Through Wires, the signals are transmitted.
+Wireless Cable - Through Air, the signals are transmitted.
+
+End Devices - Interface between Users and Underlying Communication Network
+Eg: Computers, Network printers, etc.
+
+
+Internet Service Provider - Link between the home network and the internet.
+ISPs comes in various forms, depending on the underlying technology they use.
+    1. Local Cable Providers:
+        Existing cable TV infrastructure to deliver internet services. Use coaxial cables for internet delivery, often 
+        bundled with TV and phone services.
+    2. Landline Telephone Service Providers:
+        Internet services over telephone. Use Technologies like DSL(Digital Subscriber Line) or fiber optic networks.
+        DSL - Technology that uses telephone lines to provide high speed internet.
+    3. Cellular Networks:
+        Internet access through mobile data connections.
+    4. Independent Providers:
+        Some ISPs don't own the physical network infrastructure but instead lease bandwidth from companies that do.
+
+Internet backbone - Information super highway that provides high-speed data links to connect the various service providers around the world.
+                    High Capacity central network infrastructure that carriess the majority of data across the internet.
+
+Components of Internet backbone
+--------------------------------
+    1. Fiber Optic Cables - Data using light
+    2. Core Routers - Powerful devices that direct data packets to the destination efficiently.
+                      Designed to work in the internet backbone.
+                      High capacity router that's used to manage data traffic within a large network.
+    3. Internet Exchange points - Locations where different backbone providers and networks interconnect to share traffic.
