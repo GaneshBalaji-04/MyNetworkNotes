@@ -1,0 +1,27 @@
+Learnings from Credly Netacad...
+
+The interconnection of ISPs in backbone - complex with expensive switches and routers.
+
+When we try to send a data to a remote server, first, the data reaches the router from the internal network.
+Then, it is transferred to the modem which connects the whole local network with the router to the ISP.
+ISP acts as the gateway of the WAN. Then, using multiple routers, it sends the data from the local network to the remote server.
+Those intermediate routers between the remote server and the end device will not have any modems as they are transmitting connections "internally"
+in the wide area network. This line can be well understood when the whole WAN is seen as a local network where the router is taking care of passing the information "internally".
+
+[Device] ↔ [Local Router] ↔ [Modem] ↔ [ISP Router] ↔ [Intermediate Routers (WAN)] ↔ [Remote Server]
+
+Problems while connecting your device directly to the modem without router:
+    1. Direct Exposure to the internet, the device itself must handle all the traffic.
+    2. No firewall protection - Routers have built in firewall - Modems have no firewall.
+    3. Lack of NAT - provided by routers to translate private IP addresses into a single public IP address. Without router, the device is vulnerable to attacks.
+    4. Limited to single device but router creates local network.
+    5. No Control over traffic - No Traffic filtering, Parental controls and Quality of Service.
+    etc.
+
+
+Cable connection - Internet data - same coaxial cable that telecasts channel. Both signals - separated by Cable modem.
+DSL(Digital Subscriber Line) - Internet data through the telephone wire. Requires special high speed modem to separate DSL and telephone signal.
+Three channels - One for calling without disconnecting from the internet. Second channel, faster download channel for receiving info from internet. 
+                 Third channel - uploading information(slightly slower).
+
+Additional connectivity options - Cellular, Satellite, Dial Up Telephone
